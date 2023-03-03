@@ -1,0 +1,40 @@
+{
+  "titulo" : "Motos Honda 2023",
+  "Ciudad" : "Bogota",
+  "cat" : "Bajo cilindraje",
+  "secretBase" : "Super tower",
+  "active" : true,
+  "Ref" : [
+    {
+      "modelo" : "Honda 160",
+      "cc" : "155 cc",
+      "tipo" : "Carburador",
+      "acc" : [
+        "Parrilla y Maletero",
+        "alarma",
+        "alforjas"
+      ]
+    },
+    {
+      "modelo" : "Honda 190r",
+      "cc" : "185 cc",
+      "tipo" : "Full Injection",
+      "acc" : [
+        "Sin parrilla",
+        "Alarma Dos Vias",
+        "Sin alforjas"
+      ]
+    },
+    {
+      "modelo" : "Honda 250",
+      "cc" : "249 cc",
+      "tipo" : "Full Injection",
+      "acc" : [
+        "Con Parrilla y baul",
+        "Alarma Doble Via",
+        "Con Alforjas",
+        "Seguro a terceros"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Motos Honda</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  </head>
+
+  <body>
+	
+<header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+    <script>
+
+    async function populate() {
+
+      const requestURL = 'json.json';
+      const request = new Request(requestURL);
+
+      const response = await fetch(request);
+      const superHeroesText = await response.text();
+
+      const superHeroes = JSON.parse(superHeroesText);
+      populateHeader(superHeroes);
+      populateHeroes(superHeroes);
+
+    }
+
+    function populateHeader(obj) {
+      const header = document.querySelector('header');
+      const myH1 = document.createElement('h1');
+      myH1.textContent = obj.titulo;
+      header.appendChild(myH1);
+
+      const myPara = document.createElement('p');
+      myPara.textContent = `Ciudad: ${obj.Ciudad} |||||| Categoria: ${obj.cat}`;
+      header.appendChild(myPara);
+    }
+
+    function populateHeroes(obj) {
+      const section = document.querySelector('section');
+      const honda = obj.Ref;
+
+      for (const moto of honda) {
+        const myArticle = document.createElement('article');
+        const myH2 = document.createElement('h2');
+        const myPara1 = document.createElement('p');
+        const myPara2 = document.createElement('p');
+        const myPara3 = document.createElement('p');
+        const myList = document.createElement('ul');
+
+        myH2.textContent = moto.modelo;
+        myPara1.textContent = `Tipo de motor: ${moto.tipo}`;
+        myPara2.textContent = `Cilindraje: ${moto.cc}`;
+        myPara3.textContent = 'Accesorios adicionales:';
+
+        const listaacc = moto.acc;
+        for (const item of listaacc) {
+          const listItem = document.createElement('li');
+          listItem.textContent = item;
+          myList.appendChild(listItem);
+        }
+
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myList);
+
+        section.appendChild(myArticle);
+      }
+    }
+
+    populate();
+
+    </script>
+  </body>
+</html>

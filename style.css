@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+
+html {
+  color: blue;
+font-family: 'Mynerve', cursive;
+
+}
+
+body {
+background-image: url(https://images5.alphacoders.com/400/400812.png);
+       background-repeat: no-repeat;
+       background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+color: red;
+width: 85%;
+  margin: 0 auto;
+}
+
+h1, h2 {
+font-family: 'Mynerve', cursive;
+  font-family: 'Bangers', cursive;
+}
+
+/* header styles */
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* section styles */
+
+section article {
+  width: 33%;
+  float: left;
+}
+
+section p {
+  margin: 5px 0;
+}
+
+section ul {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+  margin-bottom: 10px;
+}
