@@ -9,17 +9,20 @@ font-family: 'Mynerve', cursive;
 }
 
 body {
-background-image: url(https://images5.alphacoders.com/400/400812.png);
+background-image: url(https://besthqwallpapers.com/Uploads/29-7-2021/172322/thumb2-honda-3d-white-logo-gray-background-honda-logo-creative-3d-art-honda.jpg);
        background-repeat: no-repeat;
        background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
         -o-background-size: cover;
-color: red;
+color: darkred ;
 width: 85%;
   margin: 0 auto;
 }
-
+a {
+  color: aliceblue;
+  font-size: 10;
+}
 h1, h2 {
 font-family: 'Mynerve', cursive;
   font-family: 'Bangers', cursive;
